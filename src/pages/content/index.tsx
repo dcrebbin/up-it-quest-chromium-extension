@@ -5,8 +5,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     const regex = /problems\/(.*?)\/description\//g;
     const match = regex.exec(url);
     if (match && match[1]) {
-      
-      window.location.href = `http://localhost:3000/?question=${match[1]}`;
+      window.location.href = `${message.url}/?question=${match[1]}`;
     }
   }
 });
