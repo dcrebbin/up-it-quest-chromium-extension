@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Up It Quest 📈",
+  "description": "Right click on a DSA problem to automatically redirect to Up It Quest or your local Up It Quest to get AI powered DSA tutoring!",
+  "version": "1.0.0",
+  "author": "Devon Crebbin",
+  "background": {
+    "service_worker": "src/pages/background/index.ts",
+    "type": "module"
+  },
+  "options_page": "src/pages/options/index.html",
+  "action": {
+    "default_icon": {
+      "32": "icon32.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';script-src '*.tailwindcss.com'"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": ["activeTab", "contextMenus", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["src/pages/content/index.tsx"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["icon128.png", "icon32.png"],
+      "matches": []
+    }
+  ]
+}
