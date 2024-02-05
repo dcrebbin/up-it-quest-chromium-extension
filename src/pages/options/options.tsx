@@ -30,13 +30,12 @@ export default function Options(): JSX.Element {
   }, []);
 
   return (
-    <div className="flex flex-col w-full h-full items-center bg-black text-white">
-      <h1 className="font-serif">Up It Quest Options</h1>
-      <div className="flex">
+    <div className="container">
+      <h1>Up It Quest Options</h1>
+      <div>
+        <label htmlFor="color">URL</label>
         <input ref={urlRef} type="text" id="color" />
-        <button className="bg-white text-white p-2" onClick={saveOptions}>
-          Save
-        </button>
+        <button onClick={saveOptions}>Save</button>
       </div>
       <div ref={statusRef} id="status"></div>
     </div>

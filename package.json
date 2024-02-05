@@ -1,6 +1,6 @@
 {
-  "name": "support-our-mob-chrome-extension",
-  "version": "1.1.0",
+  "name": "up-it-quest-chromium-extension",
+  "version": "1.0.0",
   "description": "Right click on any input to display an option to show mob your support by instantly adding these emojis: 🖤💛❤️",
   "license": "MIT",
   "author": "Devon Crebbin",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dcrebbin/support-our-mob.git"
+    "url": "https://github.com/dcrebbin/up-it-quest-chromium-extension"
   },
   "type": "module",
   "dependencies": {
