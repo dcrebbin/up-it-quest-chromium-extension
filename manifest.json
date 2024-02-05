@@ -15,7 +15,7 @@
     }
   },
   "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'self';script-src '*.tailwindcss.com'"
+    "extension_pages": "script-src 'self'; object-src 'self';"
   },
   "icons": {
     "16": "icon16.png",
